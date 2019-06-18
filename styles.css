@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(172, 61, 61);
+}
+
+h1 {
+  display: flex;
+  font-family: "Cinzel", serif;
+  justify-content: center;
+  margin: 20px;
+  font-size: 6em;
+}
+
+#start-button {
+  font-family: "Cinzel", serif;
+  color: goldenrod;
+  background-color: darkred;
+  font-size: 2em;
+  display: flex;
+}
+canvas {
+  background-image: url(Tarot/background.jpg);
+  margin: 30px;
+}
+
+#container {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 0 30px;
+}
