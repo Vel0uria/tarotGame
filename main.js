@@ -3,13 +3,14 @@ window.onload = function() {
     startGame();
   };
 
-  function update() {
+  function startGame() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     displayCards();
+    //drawCard();
   }
 
-  function startGame() {
-    if (interval) return;
-    interval = setInterval(update, 1000 / 60);
-  }
+  // function startGame() {
+  //   if (interval) return;
+  //   interval = setInterval(update, 1000 / 60);
+  // }
 };

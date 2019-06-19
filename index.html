@@ -9,17 +9,33 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Tarot world</title>
+    <title>World of Tarot</title>
   </head>
   <body>
-    <h1><b>World of Tarot</b></h1>
+    <section class="header">
+      <h1><b>World of Tarot</b></h1>
+      <img src="Tarot/21-mundo-stodos.png" alt="world" />
+    </section>
 
-    <div id="container">
-      <img href="Tarot/1-mago.png" alt="mago-card" />
-      <p>The wizard lost his tools! help him found them</p>
-      <button id="start-button">Start game</button>
+    <section id="intro">
+      <canvas id="tarotCanvas" width="1900" height="1050"></canvas>
+      <div class="assets">
+        <img
+          src="Tarot/1-mago.png"
+          alt="mago-card"
+          width="130px"
+          height="250px"
+        />
+        <p>The wizard lost his tools! help him found them</p>
+        <button id="start-button">Start game</button>
+      </div>
+    </section>
+    <div id="ases">
+      <img id="bastos" src="Tarot/as-bastos.png" alt="wands" />
+      <img id="copas" src="Tarot/as-copas.png" alt="cups" />
+      <img id="oros" src="Tarot/as-oros.png" alt="coins" />
+      <img id="espadas" src="Tarot/as-espadas.png" alt="swords" />
     </div>
-    <canvas id="tarotCanvas" width="1300" height="900"></canvas>
     <script src="classes.js"></script>
     <script src="variables.js"></script>
     <script src="helpers.js"></script>

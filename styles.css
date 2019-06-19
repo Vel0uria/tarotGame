@@ -9,12 +9,33 @@ body {
   background-color: rgb(172, 61, 61);
 }
 
-h1 {
+.header {
   display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+
+.header img {
+  width: 90px;
+  height: 150px;
+  padding: 0 150px;
+}
+
+h1 {
   font-family: "Cinzel", serif;
-  justify-content: center;
-  margin: 20px;
   font-size: 6em;
+  display: flex;
+}
+#intro {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+}
+.assets {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
 }
 
 #start-button {
@@ -26,12 +47,20 @@ h1 {
 }
 canvas {
   background-image: url(Tarot/background.jpg);
-  margin: 30px;
-}
 
-#container {
+  display: flex;
+  flex-flow: row wrap;
+}
+/*
+#pics {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
   padding: 0 30px;
+}
+*/
+
+#ases img {
+  width: 5%;
+  height: 10%;
 }

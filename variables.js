@@ -2,38 +2,39 @@ const canvas = document.querySelector("#tarotCanvas");
 const ctx = canvas.getContext("2d");
 let interval;
 let board = new Board();
+let card = new Card();
 const images = [
   "Tarot/loco.png",
-  "Tarot/2-sacerdotiza.png",
-  "Tarot/3-emperatriz.png",
-  "Tarot/4-emperador.png",
-  "Tarot/5-hierofante.png",
-  "Tarot/6-Amantes.png",
-  "Tarot/7-carruaje.png",
-  "Tarot/8-justicia.png",
-  "Tarot/9-ermitaño.png",
-  "Tarot/10-fortuna.png",
-  "Tarot/11-fuerza.png",
-  "Tarot/12-colgado.png",
-  "Tarot/13-muerte.png",
-  "Tarot/14-templanza.png",
-  "Tarot/15-diablo.png",
-  "Tarot/16-torre.png",
-  "Tarot/17-estrella.png",
-  "Tarot/18-luna.png",
-  "Tarot/19-sol.png",
-  "Tarot/20-juicio.png"
-];
 
-const wizardTools = [
-  "Tarot/as-bastos.png",
-  "Tarot/as-copas.png",
-  "Tarot/as-espadas.png",
-  "Tarot/as-oros.png"
+  "Tarot/2-sacerdotiza.png",
+
+  "Tarot/5-hierofante.png",
+
+  "Tarot/9-ermitaño.png",
+
+  "Tarot/13-muerte.png",
+
+  "Tarot/15-diablo.png",
+
+  "Tarot/17-estrella.png"
 ];
 
 const cards = [];
 
-for (i = 0; i < images.length; i++) {
-  cards.push(new Card(30 + 60 * i, images[i]));
-}
+//let rndC = Math.floor(Math.random() * cards.length);
+
+const riddles = [
+  "A dragon's tooth on a mortal's hand",
+
+  "A belly full of wine, which in celebrations makes a clinking sound",
+
+  "I was often put between people's teeth and yet i am not food",
+
+  "Son of a great lord with green hat, but only inherited the brown pants",
+
+  "The stars grants wishes to those with pure intentios. Pick a card for free!!",
+
+  "The devil takes away when your intentions are not pure. You lost a card. :(",
+
+  "Death appears when we need a new beggining. Start again from scrath!"
+];
