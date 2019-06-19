@@ -7,11 +7,11 @@ class Board {
   }
 }
 class Card {
-  constructor(x, img, question, answer) {
+  constructor(x, img, question) {
     this.x = x;
-    this.y = 150;
-    this.width = 120;
-    this.height = 225;
+    this.y = 40;
+    this.width = 60;
+    this.height = 90;
     this.img = img;
     this.imgTop = new Image();
     this.imgTop.src = "Tarot/fondo.png";

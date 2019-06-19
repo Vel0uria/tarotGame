@@ -1,4 +1,6 @@
 const canvas = document.querySelector("#tarotCanvas");
+let elemLeft = canvas.offsetLeft;
+let elemTop = canvas.offsetTop;
 const ctx = canvas.getContext("2d");
 let interval;
 let board = new Board();
@@ -20,8 +22,6 @@ const images = [
 ];
 
 const cards = [];
-
-//let rndC = Math.floor(Math.random() * cards.length);
 
 const riddles = [
   "A dragon's tooth on a mortal's hand",

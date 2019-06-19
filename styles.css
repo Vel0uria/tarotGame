@@ -21,6 +21,10 @@ body {
   padding: 0 150px;
 }
 
+.worlds {
+  display: none;
+}
+
 h1 {
   font-family: "Cinzel", serif;
   font-size: 6em;
@@ -43,7 +47,7 @@ h1 {
   color: goldenrod;
   background-color: darkred;
   font-size: 2em;
-  display: flex;
+  margin: 10px;
 }
 canvas {
   background-image: url(Tarot/background.jpg);
@@ -51,14 +55,6 @@ canvas {
   display: flex;
   flex-flow: row wrap;
 }
-/*
-#pics {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  padding: 0 30px;
-}
-*/
 
 #ases img {
   width: 5%;

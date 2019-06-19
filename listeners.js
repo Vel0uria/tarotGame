@@ -22,21 +22,20 @@ document.getElementById("espadas").addEventListener("click", event => {
   }
 });
 
-addEventListener("click", event => {
-  console.log(event);
-  console.log(cards);
-  if (
-    (event.clientX > 420 && event.clientX < 510) ||
-    (event.clientX > 596 && event.clientX < 697) ||
-    (event.clientX > 750 && event.clientX < 840) ||
-    (event.clientX > 936 && event.clientX < 1028) ||
-    (event.clientX > 1106 && event.clientX < 1196) ||
-    (event.clientX > 1278 && event.clientX < 1366) ||
-    (event.clientX > 1456 && event.clientX < 1546) ||
-    (event.clientX < 12 &&
-      event.clientX > 1290 &&
-      (event.clientY > 530 && event.clientY < 610))
-  ) {
-    alert("..");
-  }
-});
+canvas.addEventListener(
+  "click",
+  function(event) {
+    let x = event.pageX - elemLeft;
+    let y = event.pageY - 370;
+    cards.forEach(function(element) {
+      if (
+        x > element.x &&
+        x < element.x + element.width &&
+        (y > element.y && y < element.y + element.height)
+      ) {
+        alert("clicked an element");
+      }
+    });
+  },
+  false
+);
