@@ -7,18 +7,34 @@ class Board {
   }
 }
 class Card {
-  constructor(x, img, question) {
+  constructor(x, img, question, answer) {
     this.x = x;
     this.y = 40;
     this.width = 60;
     this.height = 90;
-    this.img = img;
+    this.img = new Image();
+    this.img.src = img;
     this.imgTop = new Image();
     this.imgTop.src = "Tarot/fondo.png";
     this.question = question;
+    this.answer = answer;
   }
 
   draw() {
     ctx.drawImage(this.imgTop, this.x, this.y, this.width, this.height);
   }
+  drawCenter() {
+    console.log(this);
+    ctx.drawImage(this.img, 320, 200, 180, 270);
+    ctx.fillStyle = "black";
+    ctx.fillRect(40, 550, 900, 22);
+    ctx.fillStyle = "white";
+    ctx.font = "22px Cinzel, serif";
+    ctx.fillText(this.question, 40, 570);
+  }
+  // drawRiddles() {
+  //   ctx.fillStyle = "white";
+  //   ctx.font = "40px arial";
+  //   ctx.fillText(this.question, 500, 200);
+  // }
 }

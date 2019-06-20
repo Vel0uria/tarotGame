@@ -24,17 +24,28 @@ const images = [
 const cards = [];
 
 const riddles = [
+  "Son of a great lord with green hat, but only inherited the brown pants",
+
   "A dragon's tooth on a mortal's hand",
 
   "A belly full of wine, which in celebrations makes a clinking sound",
 
   "I was often put between people's teeth and yet i am not food",
 
-  "Son of a great lord with green hat, but only inherited the brown pants",
-
-  "The stars grants wishes to those with pure intentios. Pick a card for free!!",
+  "Death appears when we need a new beggining. Start again from scrath!",
 
   "The devil takes away when your intentions are not pure. You lost a card. :(",
 
-  "Death appears when we need a new beggining. Start again from scrath!"
+  "The stars grants wishes to those with pure intentions. Pick a card for free!!"
 ];
+
+const answers = [
+  "wands",
+  "swords",
+  "cups",
+  "coins",
+  "takes away all",
+  "gives you one"
+];
+
+let selectedCard = undefined;
