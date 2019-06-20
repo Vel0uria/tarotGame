@@ -5,6 +5,11 @@ const ctx = canvas.getContext("2d");
 let interval;
 let board = new Board();
 let card = new Card();
+let wcoins = document.getElementById("wcoins");
+let wwands = document.getElementById("wwands");
+let wswords = document.getElementById("wswords");
+let wcups = document.getElementById("wcups");
+let cardsWon = [];
 const images = [
   "Tarot/loco.png",
 
@@ -44,8 +49,9 @@ const answers = [
   "swords",
   "cups",
   "coins",
-  "takes away all",
-  "gives you one"
+  "takes all",
+  "takes one",
+  "gives one"
 ];
 
 let selectedCard = undefined;

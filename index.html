@@ -9,20 +9,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>World of Tarot</title>
+    <title>Epic Tarot</title>
   </head>
   <body>
     <section class="header">
       <h1><b>Epic Tarot</b></h1>
-      <img src="Tarot/21-mundo-stodos.png" alt="world" />
-      <div class="worlds">
-        <img src="Tarot/21-mundo-stodos.png" alt="world" />
-        <img src="Tarot/21-mundo-stodos.png" alt="world" />
-        <img src="Tarot/21-mundo-stodos.png" alt="world" />
-      </div>
     </section>
 
     <section id="intro">
+      <section>
+        <img class="mundo-1" src="Tarot/21-mundo-stodos.png" alt="world" />
+        <div class="worlds">
+          <img src="Tarot/21-mundo-stodos.png" alt="world" />
+          <img src="Tarot/21-mundo-stodos.png" alt="world" />
+          <img src="Tarot/21-mundo-stodos.png" alt="world" />
+        </div>
+      </section>
       <canvas id="tarotCanvas" width="980" height="650"></canvas>
       <div class="assets">
         <img
@@ -34,12 +36,21 @@
         <button id="start-button">Start game</button>
       </div>
     </section>
-    <div id="ases">
-      <img id="wands" src="Tarot/as-bastos.png" alt="wands" />
-      <img id="cups" src="Tarot/as-copas.png" alt="cups" />
-      <img id="coins" src="Tarot/as-oros.png" alt="coins" />
-      <img id="swords" src="Tarot/as-espadas.png" alt="swords" />
-    </div>
+    <section id="ases">
+      <div class="ases-botones">
+        <img id="swords" src="Tarot/as-espadas.png" alt="swords" />
+        <img id="wands" src="Tarot/as-bastos.png" alt="wands" />
+        <img id="cups" src="Tarot/as-copas.png" alt="cups" />
+        <img id="coins" src="Tarot/as-oros.png" alt="coins" />
+      </div>
+      <div class="ases-win">
+        <img id="wswords" src="Tarot/as-espadas.png" alt="swords" />
+        <img id="wwands" src="Tarot/as-bastos.png" alt="wands" />
+        <img id="wcups" src="Tarot/as-copas.png" alt="cups" />
+        <img id="wcoins" src="Tarot/as-oros.png" alt="coins" />
+      </div>
+    </section>
+
     <script src="classes.js"></script>
     <script src="variables.js"></script>
     <script src="helpers.js"></script>

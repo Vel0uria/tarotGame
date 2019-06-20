@@ -15,10 +15,8 @@ body {
   align-content: center;
 }
 
-.header img {
-  width: 90px;
-  height: 150px;
-  padding: 0 150px;
+.mundo-1 {
+  margin: 30px 50px;
 }
 
 .worlds {
@@ -32,7 +30,6 @@ h1 {
 }
 #intro {
   position: relative;
-
   display: flex;
   justify-content: center;
 }
@@ -55,8 +52,33 @@ canvas {
   display: flex;
   flex-flow: row wrap;
 }
-
-#ases img {
-  width: 5%;
+/*
+#ases {
+  display: flex;
+}
+*/
+.ases-botones img {
   height: 10%;
+  width: 7%;
+}
+
+.ases-win img {
+  width: 2.5%;
+  height: 4%;
+}
+
+#wcoins {
+  display: none;
+}
+
+#wcups {
+  display: none;
+}
+
+#wswords {
+  display: none;
+}
+
+#wwands {
+  display: none;
 }

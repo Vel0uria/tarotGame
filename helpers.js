@@ -21,8 +21,46 @@ function shuffle(array) {
   return array;
 }
 
-function death() {}
+function death() {
+  if (selectedCard.answer === "takes all") {
+    let selectedCard = cardsWon.pop();
 
-function star() {}
+    if (selectedCard === "coins") {
+      wcoins.style.display = "none";
+      wwands.style.display = "none";
+      wcups.style.display = "none";
+      wswords.style.display = "none";
+    } else if (selectedCard === "wands") {
+      wcoins.style.display = "none";
+      wwands.style.display = "none";
+      wcups.style.display = "none";
+      wswords.style.display = "none";
+    } else if (selectedCard === "cups") {
+      wcoins.style.display = "none";
+      wwands.style.display = "none";
+      wcups.style.display = "none";
+      wswords.style.display = "none";
+    } else if (selectedCard === "swords") {
+      wcoins.style.display = "none";
+      wwands.style.display = "none";
+      wcups.style.display = "none";
+      wswords.style.display = "none";
+    }
+  }
+}
 
-function devil() {}
+function devil() {
+  if (selectedCard.answer === "takes one") {
+    let selectedCard = cardsWon.pop();
+
+    if (selectedCard === "coins") {
+      wcoins.style.display = "none";
+    } else if (selectedCard === "wands") {
+      wwands.style.display = "none";
+    } else if (selectedCard === "cups") {
+      wcups.style.display = "none";
+    } else if (selectedCard === "swords") {
+      wswords.style.display = "none";
+    }
+  }
+}

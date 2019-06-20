@@ -6,6 +6,7 @@ window.onload = function() {
   function startGame() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     displayCards();
+
     //drawCard();
   }
 
