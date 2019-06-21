@@ -11,31 +11,21 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Epic Tarot</title>
   </head>
-  <body>
-    <section class="header">
-      <h1><b>Epic Tarot</b></h1>
-    </section>
 
-    <section id="intro">
-      <section>
+  <body>
+    <h1><b>Epic Tarot</b></h1>
+    <section id="Canvas">
+      <div class="world">
         <img id="mundo-1" src="Tarot/21-mundo-stodos.png" alt="world" />
-        <div class="worlds">
-          <img id="azul" src="Tarot/21-mundo-sv.png" alt="world" />
-          <img
-            id="verde"
-            src="Tarot/21-mundo-stodosverdeazul.png"
-            alt="world"
-          />
-          <img id="amarillo" src="Tarot/21-mundo-sa.png" alt="world" />
-          <img
-            id="rojo"
-            src="Tarot/21-mundo-stodosverdeazulamarillo.png"
-            alt="world"
-          />
+        <div class="worlds img">
+          <img id="uno" src="Tarot/21-mundo-solorojo.png" alt="world" />
+          <img id="dos" src="Tarot/21-mundo-azulrojo.png" alt="world" />
+          <img id="tres" src="Tarot/21-mundo-samarillo.png" alt="world" />
+          <img id="completa" src="Tarot/mundo-bordes.png" alt="world" />
         </div>
-      </section>
+      </div>
       <canvas id="tarotCanvas" width="980" height="650"></canvas>
-      <div class="assets">
+      <div class="start">
         <img
           src="Tarot/1-mago.png"
           alt="mago-card"
@@ -45,6 +35,7 @@
         <button id="start-button">Start game</button>
       </div>
     </section>
+
     <section id="ases">
       <div class="ases-botones">
         <img id="swords" src="Tarot/as-espadas.png" alt="swords" />
@@ -52,9 +43,11 @@
         <img id="cups" src="Tarot/as-copas.png" alt="cups" />
         <img id="coins" src="Tarot/as-oros.png" alt="coins" />
       </div>
-      <div class="ases-win">
+      <div class="ases-win-1">
         <img id="wswords" src="Tarot/as-espadas.png" alt="swords" />
         <img id="wwands" src="Tarot/as-bastos.png" alt="wands" />
+      </div>
+      <div class="ases-win-2">
         <img id="wcups" src="Tarot/as-copas.png" alt="cups" />
         <img id="wcoins" src="Tarot/as-oros.png" alt="coins" />
       </div>

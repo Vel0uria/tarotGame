@@ -10,44 +10,56 @@ body {
   background-size: cover;
 }
 
-.header {
+h1 {
   display: flex;
-  flex-flow: column wrap;
-  align-content: center;
+  justify-content: center;
+
+  color: darkred;
+  font-family: "Cinzel", serif;
+
+  font-size: 6em;
 }
 
-.mundo-1 {
-  margin: 30px 50px;
-  width: 68%;
-  height: 38%;
+#Canvas {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+canvas {
+  display: flex;
+  margin: 0 20px;
+
+  background-image: url(Tarot/background.jpg);
+}
+.world {
+  display: flex;
 }
 
 .worlds img {
-  height: 200px;
+  display: flex;
+  align-self: baseline;
+  height: 210px;
 }
 
-#azul,
-#verde,
-#amarillo,
-#rojo {
+#mundo-1 {
+  height: 190px;
+}
+
+#uno,
+#dos,
+#tres,
+#completa {
   display: none;
 }
 
-h1 {
-  color: darkred;
-  font-family: "Cinzel", serif;
-  font-size: 6em;
-  display: flex;
-}
-#intro {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-.assets {
+.start {
   display: flex;
   flex-flow: column wrap;
   align-items: flex-end;
+}
+
+.start img {
+  align-self: center;
 }
 
 #start-button {
@@ -56,12 +68,6 @@ h1 {
   background-color: darkred;
   font-size: 2em;
   margin: 10px 5px;
-}
-canvas {
-  background-image: url(Tarot/background.jpg);
-
-  display: flex;
-  flex-flow: row wrap;
 }
 
 #ases {
@@ -74,7 +80,13 @@ canvas {
   height: 150px;
 }
 
-.ases-win img {
+.ases-win-1 img {
+  display: flex;
+  flex-flow: row wrap;
+  height: 80px;
+}
+
+.ases-win-2 img {
   display: flex;
   flex-flow: row wrap;
   height: 80px;

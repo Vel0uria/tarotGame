@@ -1,4 +1,4 @@
-const canvas = document.querySelector("#tarotCanvas");
+const canvas = document.getElementById("tarotCanvas");
 let elemLeft = canvas.offsetLeft;
 let elemTop = canvas.offsetTop;
 const ctx = canvas.getContext("2d");
@@ -7,11 +7,11 @@ let wcoins = document.getElementById("wcoins");
 let wwands = document.getElementById("wwands");
 let wswords = document.getElementById("wswords");
 let wcups = document.getElementById("wcups");
-let azul = document.getElementById("azul");
-let verde = document.getElementById("verde");
-let amarillo = document.getElementById("amarillo");
-let rojo = document.getElementById("rojo");
+let uno = document.getElementById("uno");
+let dos = document.getElementById("dos");
+let tres = document.getElementById("tres");
 let mundo1 = document.getElementById("mundo-1");
+let completa = document.getElementById("completa");
 let cardsWon = [];
 const images = [
   "Tarot/loco.png",

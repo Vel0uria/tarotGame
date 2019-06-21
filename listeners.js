@@ -8,8 +8,8 @@ document.getElementById("wands").addEventListener("click", event => {
     wwands.style.display = "block";
     cardsWon.push("wands");
     console.log(cardsWon);
-    //endGame();
-    console.log(endGame());
+    drawWorld();
+    endGame();
   } else {
     ctx.fillStyle = "black";
     ctx.fillRect(700, 270, 200, 30);
@@ -34,8 +34,8 @@ document.getElementById("coins").addEventListener("click", event => {
       wcoins.style.display = "block";
       cardsWon.push("coins");
       console.log(cardsWon);
-      //endGame();
-      console.log(endGame());
+      drawWorld();
+      endGame();
     } else {
       ctx.fillStyle = "black";
       ctx.fillRect(700, 270, 200, 32);
@@ -57,8 +57,8 @@ document.getElementById("cups").addEventListener("click", event => {
       wcups.style.display = "block";
       cardsWon.push("cups");
       console.log(cardsWon);
-      //endGame();
-      console.log(endGame());
+      drawWorld();
+      endGame();
     } else {
       ctx.fillStyle = "black";
       ctx.fillRect(700, 270, 200, 32);
@@ -83,9 +83,8 @@ document.getElementById("swords").addEventListener("click", event => {
       wswords.style.display = "block";
       cardsWon.push("swords");
       console.log(cardsWon);
-
-      //endGame();
-      console.log(endGame());
+      drawWorld();
+      endGame();
     } else {
       ctx.fillStyle = "black";
       ctx.fillRect(700, 270, 200, 32);
@@ -99,7 +98,6 @@ document.getElementById("swords").addEventListener("click", event => {
 canvas.addEventListener(
   "click",
   function(event) {
-    console.log(event);
     let x = event.pageX - elemLeft;
     let y = event.pageY - 210;
     cards.forEach(function(element) {

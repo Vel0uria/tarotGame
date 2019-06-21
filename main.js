@@ -10,7 +10,8 @@ function startGame() {
 
 function endGame() {
   if (cardsWon.length === 4) {
-    ctx.styleRect = "black";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(completa, 400, 200, 200, 330);
+    ctx.fillText("You saved the world!!", 300, 90);
   }
 }

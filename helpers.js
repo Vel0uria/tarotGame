@@ -2,7 +2,7 @@ function displayCards() {
   for (i = 0; i < images.length; i++) {
     cards.push(new Card(90 + 120 * i, images[i], riddles[i], answers[i]));
   }
-  shuffle(cards);
+  shuffle(card);
   cards.forEach(card => {
     card.draw();
   });
@@ -54,6 +54,8 @@ function devil() {
     let selectedCard = cardsWon.pop();
 
     if (selectedCard === "coins") {
+      selectedCard;
+
       wcoins.style.display = "none";
     } else if (selectedCard === "wands") {
       wwands.style.display = "none";
@@ -64,32 +66,27 @@ function devil() {
     }
   }
 }
-/*
+
 function drawWorld() {
-  if (selectedCard.answer === "coins") {
-    azul.style.display = "block";
-    amarillo.style.display = "none";
-    verde.style.display = "none";
-    rojo.style.display = "none";
+  if (cardsWon.length === 1) {
+    uno.style.display = "block";
+    dos.style.display = "none";
+    tres.style.display = "none";
     mundo1.style.display = "none";
-  } else if (selectedCard.answer === "wands") {
-    azul.style.display = "none";
-    amarillo.style.display = "block";
-    verde.style.display = "none";
-    rojo.style.display = "none";
+  } else if (cardsWon.length === 2) {
+    uno.style.display = "none";
+    dos.style.display = "block";
+    tres.style.display = "none";
     mundo1.style.display = "none";
-  } else if (selectedCard.answer === "cups") {
-    azul.style.display = "none";
-    amarillo.style.display = "none";
-    verde.style.display = "block";
-    rojo.style.display = "none";
+  } else if (cardsWon.length === 3) {
+    uno.style.display = "none";
+    dos.style.display = "none";
+    tres.style.display = "block";
     mundo1.style.display = "none";
-  } else if (selectedCard.answer === "swords") {
-    azul.style.display = "none";
-    amarillo.style.display = "none";
-    verde.style.display = "none";
-    rojo.style.display = "block";
+  } else {
+    uno.style.display = "none";
+    dos.style.display = "none";
+    tres.style.display = "none";
     mundo1.style.display = "none";
   }
 }
-*/
