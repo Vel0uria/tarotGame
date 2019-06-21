@@ -2,13 +2,16 @@ const canvas = document.querySelector("#tarotCanvas");
 let elemLeft = canvas.offsetLeft;
 let elemTop = canvas.offsetTop;
 const ctx = canvas.getContext("2d");
-let interval;
-let board = new Board();
 let card = new Card();
 let wcoins = document.getElementById("wcoins");
 let wwands = document.getElementById("wwands");
 let wswords = document.getElementById("wswords");
 let wcups = document.getElementById("wcups");
+let azul = document.getElementById("azul");
+let verde = document.getElementById("verde");
+let amarillo = document.getElementById("amarillo");
+let rojo = document.getElementById("rojo");
+let mundo1 = document.getElementById("mundo-1");
 let cardsWon = [];
 const images = [
   "Tarot/loco.png",
@@ -37,9 +40,9 @@ const riddles = [
 
   "I was often put between people's teeth and yet i am not food",
 
-  "Death appears when we need a new beggining. Start again from scrath!",
+  "Death appears when we need a new beginning. Start again from scrath!",
 
-  "The devil takes away when your intentions are not pure. You lost a card. :(",
+  "The devil takes away when your intentions are not pure. You lost a card.",
 
   "The stars grants wishes to those with pure intentions. Pick a card for free!!"
 ];

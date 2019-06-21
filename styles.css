@@ -6,7 +6,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(172, 61, 61);
+  background-image: url(https://thumbs.gfycat.com/MajesticRepentantFanworms-size_restricted.gif);
+  background-size: cover;
 }
 
 .header {
@@ -17,13 +18,23 @@ body {
 
 .mundo-1 {
   margin: 30px 50px;
+  width: 68%;
+  height: 38%;
 }
 
-.worlds {
+.worlds img {
+  height: 200px;
+}
+
+#azul,
+#verde,
+#amarillo,
+#rojo {
   display: none;
 }
 
 h1 {
+  color: darkred;
   font-family: "Cinzel", serif;
   font-size: 6em;
   display: flex;
@@ -44,7 +55,7 @@ h1 {
   color: goldenrod;
   background-color: darkred;
   font-size: 2em;
-  margin: 10px;
+  margin: 10px 5px;
 }
 canvas {
   background-image: url(Tarot/background.jpg);
@@ -52,33 +63,26 @@ canvas {
   display: flex;
   flex-flow: row wrap;
 }
-/*
+
 #ases {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
-*/
+
 .ases-botones img {
-  height: 10%;
-  width: 7%;
+  height: 150px;
 }
 
 .ases-win img {
-  width: 2.5%;
-  height: 4%;
+  display: flex;
+  flex-flow: row wrap;
+  height: 80px;
 }
 
-#wcoins {
-  display: none;
-}
-
-#wcups {
-  display: none;
-}
-
-#wswords {
-  display: none;
-}
-
+#wcoins,
+#wcups,
+#wswords,
 #wwands {
   display: none;
 }

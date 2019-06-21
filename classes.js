@@ -24,7 +24,6 @@ class Card {
     ctx.drawImage(this.imgTop, this.x, this.y, this.width, this.height);
   }
   drawCenter() {
-    console.log(this);
     ctx.drawImage(this.img, 320, 200, 180, 270);
     ctx.fillStyle = "black";
     ctx.fillRect(40, 550, 900, 22);
@@ -32,9 +31,4 @@ class Card {
     ctx.font = "22px Cinzel, serif";
     ctx.fillText(this.question, 40, 570);
   }
-  // drawRiddles() {
-  //   ctx.fillStyle = "white";
-  //   ctx.font = "40px arial";
-  //   ctx.fillText(this.question, 500, 200);
-  // }
 }

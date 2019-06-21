@@ -64,3 +64,32 @@ function devil() {
     }
   }
 }
+/*
+function drawWorld() {
+  if (selectedCard.answer === "coins") {
+    azul.style.display = "block";
+    amarillo.style.display = "none";
+    verde.style.display = "none";
+    rojo.style.display = "none";
+    mundo1.style.display = "none";
+  } else if (selectedCard.answer === "wands") {
+    azul.style.display = "none";
+    amarillo.style.display = "block";
+    verde.style.display = "none";
+    rojo.style.display = "none";
+    mundo1.style.display = "none";
+  } else if (selectedCard.answer === "cups") {
+    azul.style.display = "none";
+    amarillo.style.display = "none";
+    verde.style.display = "block";
+    rojo.style.display = "none";
+    mundo1.style.display = "none";
+  } else if (selectedCard.answer === "swords") {
+    azul.style.display = "none";
+    amarillo.style.display = "none";
+    verde.style.display = "none";
+    rojo.style.display = "block";
+    mundo1.style.display = "none";
+  }
+}
+*/
