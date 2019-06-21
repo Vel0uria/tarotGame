@@ -1,8 +1,18 @@
 function displayCards() {
+  cards = [];
+
+  shuffle(allCards);
   for (i = 0; i < images.length; i++) {
-    cards.push(new Card(90 + 120 * i, images[i], riddles[i], answers[i]));
+    cards.push(
+      new Card(
+        90 + 120 * i,
+        allCards[i].image,
+        allCards[i].riddle,
+        allCards[i].answer
+      )
+    );
   }
-  shuffle(card);
+
   cards.forEach(card => {
     card.draw();
   });
@@ -23,36 +33,22 @@ function shuffle(array) {
 
 function death() {
   if (selectedCard.answer === "takes all") {
-    let selectedCard = cardsWon.pop();
+    cardsWon = [];
+    ctx.fillStyle = "black";
+    ctx.fillRect(700, 270, 200, 32);
 
-    if (selectedCard === "coins") {
-      wcoins.style.display = "none";
-      wwands.style.display = "none";
-      wcups.style.display = "none";
-      wswords.style.display = "none";
-    } else if (selectedCard === "wands") {
-      wcoins.style.display = "none";
-      wwands.style.display = "none";
-      wcups.style.display = "none";
-      wswords.style.display = "none";
-    } else if (selectedCard === "cups") {
-      wcoins.style.display = "none";
-      wwands.style.display = "none";
-      wcups.style.display = "none";
-      wswords.style.display = "none";
-    } else if (selectedCard === "swords") {
-      wcoins.style.display = "none";
-      wwands.style.display = "none";
-      wcups.style.display = "none";
-      wswords.style.display = "none";
-    }
+    wcoins.style.display = "none";
+    wwands.style.display = "none";
+    wcups.style.display = "none";
+    wswords.style.display = "none";
   }
 }
 
 function devil() {
   if (selectedCard.answer === "takes one") {
     let selectedCard = cardsWon.pop();
-
+    ctx.fillStyle = "black";
+    ctx.fillRect(700, 270, 200, 32);
     if (selectedCard === "coins") {
       selectedCard;
 

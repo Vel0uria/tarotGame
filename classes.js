@@ -16,6 +16,7 @@ class Card {
     this.img.src = img;
     this.imgTop = new Image();
     this.imgTop.src = "Tarot/fondo.png";
+    this.imgTop.onload = () => this.draw();
     this.question = question;
     this.answer = answer;
   }

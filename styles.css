@@ -38,11 +38,13 @@ canvas {
 .worlds img {
   display: flex;
   align-self: baseline;
-  height: 210px;
+  height: 280px;
+  border-radius: 7%;
 }
 
 #mundo-1 {
-  height: 190px;
+  border-radius: 7%;
+  height: 280px;
 }
 
 #uno,
@@ -59,6 +61,7 @@ canvas {
 }
 
 .start img {
+  border-radius: 7%;
   align-self: center;
 }
 
@@ -74,19 +77,23 @@ canvas {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  border-radius: 7%;
 }
 
 .ases-botones img {
+  border-radius: 7%;
   height: 150px;
 }
 
 .ases-win-1 img {
+  border-radius: 7%;
   display: flex;
   flex-flow: row wrap;
   height: 80px;
 }
 
 .ases-win-2 img {
+  border-radius: 7%;
   display: flex;
   flex-flow: row wrap;
   height: 80px;
